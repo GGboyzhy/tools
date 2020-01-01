@@ -19,12 +19,12 @@ import edu.swjtuhc.demo.service.GetArticleService;
 public class GetArticleController {
 
 	@Autowired
-	GetArticleService searchService;
+	GetArticleService getService;
 	
 	
 	@RequestMapping("/getArticle")
     public List<Article> getArticle(){
-        return searchService.getArticleList();
+        return getService.getArticleList();
     }
 
 }
